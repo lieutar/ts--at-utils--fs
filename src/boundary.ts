@@ -29,3 +29,7 @@ export async function readDir(path:string): Promise<IDirent[]>{
 export async function rm(path:string, options? : object):Promise<void>{
   return nodeFs.rm(path, options);
 }
+
+export async function rmdir(path:string, options? : object):Promise<void>{
+  return nodeFs.rmdir(path, options);
+}
